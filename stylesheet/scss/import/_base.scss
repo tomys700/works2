@@ -1,0 +1,46 @@
+*,*:after,*:before{
+    box-sizing: border-box;
+    font-family: 'Comfortaa','Noto Sans TC','Wendy One', cursive,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+sub{
+    vertical-align: sub;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    @media(max-width:568px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.btn{
+    display: block;
+    padding: 8px 32px;
+    
+}
+.text-center{
+    text-align: center;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.border-0{
+    border: none;
+}

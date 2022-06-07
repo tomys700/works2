@@ -1,0 +1,83 @@
+.wrap{
+    // max-width: 1366px;
+    // margin: 0 auto;
+    position: relative;
+    .top{
+        position:fixed;
+        bottom: 0;
+        right:calc((100vw - 1366px) / 2);
+        z-index: 10;
+        @media(max-width:568px){
+            right: 0;
+        }
+        a{
+            display: block;
+            width: 71px;
+            height: 71px;
+            border-radius: 50%;
+            background-image: url("../../images/top.svg");
+        }
+    }
+}
+.title{
+    font-size: 32px;
+    line-height: 46px;
+    color:#221e1f;
+    font-weight: bold;
+    @media(max-width:568px){
+        font-size:28px;
+        line-height: 40px;
+    }
+}
+.navbar{
+    margin-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 11;
+    @media(max-width:568px){
+        margin-bottom: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        height: auto;
+        border-bottom: 2px solid #FFD153;
+        background: #fff;
+    }
+    .logo{
+        display: block;
+        background: url("../../images/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 225px;
+        height: 41px;
+        overflow: hidden;
+        text-indent: 101%;
+        white-space: nowrap;
+        @media(max-width:568px){
+            width: 134px;
+            height: 27px;
+            background: url("../../images/logo-sm.png");
+        }
+    }
+    .nav-cost{
+        color:#fff;
+        border-radius: 20px;
+        background: #FF5D50;
+        font-weight: 700;
+        &:hover{
+            background: #fff;
+            color: #FF5D50;
+            border: 1px solid #FF5D50;
+        }
+        &.active{
+            background: lighten(#FF5D50,20%);
+        }
+    }
+
+}
+
+.footer{
+    background: #F5F5F5;
+    padding: 1rem 0;
+    text-align: center;
+}

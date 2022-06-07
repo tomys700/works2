@@ -1,0 +1,18 @@
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+    
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-direction-column-sm{
+    @media(max-width:568px){
+        flex-direction: column;
+    }
+}
